@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Protest Strike';
+    src: url('ProtestStrike-Regular.ttf') format('truetype');
+}
+
+
+body{
+    background: black;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px;
+}
+
+a, li{
+    font-family: 'Protest Strike', sans-serif;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+}
+.nav_links{
+    text-decoration: none;
+
+}
+
+.nav_links li{
+    display: inline-block;
+    justify-content: space-between;
+    border-radius: 20px;
+    
+
+    transition: 0.3s;
+}
+
+.nav_links li:hover{
+    transform: translateY(-25px);
+    box-shadow: 0 0 10px 5px #3498db;
+    background: #3498db;
+}
+
+.img{
+    border-radius: 20px;
+}
+
+h1{
+    font-family: 'Protest Strike', sans-serif;
+    color: white;
+    margin-top: 15px;
+    font-size: 48px;
+}
+
+@media (max-width : 830px){
+    h1{
+        font-size: 35px;
+    }
+    a,li{
+        font-size: 15px;
+        padding:10px
+    }
+    img{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+@media(max-width:620px){
+    h1{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    a,li{
+        font-size: 10px;
+        padding:5px
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media(max-width:450px){
+    h1{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    a,li{
+        font-size: 5px;
+        padding:7px
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    .nav_links{
+        margin-top: 5px;
+    }
+
+}
